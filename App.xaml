@@ -1,0 +1,12 @@
+﻿<Application x:Class="WpfToDoList.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfToDoList"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <local:DoneToColorConverter x:Key="DoneToColorConverter" />
+        <local:DoneToTextDecorationConverter x:Key="DoneToTextDecorationConverter" />
+        <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+        <local:InverseBoolConverter x:Key="InverseBoolConverter"/>
+    </Application.Resources>
+</Application>
